@@ -16,9 +16,10 @@ steps:
 - script: dotnet build --configuration $(buildConfiguration)
   displayName: 'dotnet build $(buildConfiguration)'
 - task: FtpUpload@2
+  displayName: 'FTP Upload'
   inputs:
     credentialsOption: 'inputs'
-    serverUrl: 'ftp.lojafacilonline.com.br'
+    serverUrl: 'ftp://191.252.197.235'
     username: 'Ecommerce'
     password: 'object#IIS#'
     rootDirectory: 'TesteObject'
