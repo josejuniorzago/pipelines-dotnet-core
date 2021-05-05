@@ -29,7 +29,7 @@ steps:
     credentialsOption: 'inputs'
     serverUrl: 'ftp://191.252.197.235/TesteObject'
     username: 'Ecommerce'
-    password: 'object#IIS@'
+    password: 'object#IIS#'
     rootDirectory: 
     filePatterns: '**'
     remoteDirectory: '/'
