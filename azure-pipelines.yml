@@ -18,10 +18,10 @@ steps:
 - task: FtpUpload@2
   inputs:
     credentialsOption: 'inputs'
-    serverUrl: '191.252.197.235'
+    serverUrl: 'ftp.lojafacilonline.com.br'
     username: 'Ecommerce'
     password: 'object#IIS#'
-    rootDirectory: 'TesteBuildAPI'
+    rootDirectory: 'TesteObject'
     filePatterns: '**'
     remoteDirectory: '/upload/$(Build.BuildId)/'
     clean: false
