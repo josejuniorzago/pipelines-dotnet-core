@@ -32,7 +32,7 @@ steps:
     password: 'object#IIS#'
     rootDirectory: 
     filePatterns: '**'
-    remoteDirectory: '/'
+    remoteDirectory: '/TesteObject'
     clean: false
     cleanContents: false
     preservePaths: false
