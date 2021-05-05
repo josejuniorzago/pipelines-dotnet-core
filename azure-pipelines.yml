@@ -24,7 +24,7 @@ steps:
     password: 'object#IIS#'
     rootDirectory: 'TesteObject'
     filePatterns: '**'
-    remoteDirectory: '/upload/$(Build.BuildId)/'
+    remoteDirectory: '/{System.DefaultWorkingDirectory}/'
     clean: false
     cleanContents: false
     preservePaths: false
