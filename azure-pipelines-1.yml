@@ -24,3 +24,16 @@ steps:
     archiveType: 'zip'
     archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
     replaceExistingArchive: true
+- task: FtpUpload@2
+  inputs:
+    credentialsOption: 'inputs'
+    serverUrl: 'ftp://191.252.197.235'
+    username: 'ecommerce'
+    password: 'object#IIS#'
+    rootDirectory: 'TesteObject/'
+    filePatterns: '**'
+    remoteDirectory: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+    clean: false
+    cleanContents: false
+    preservePaths: false
+    trustSSL: false
