@@ -27,12 +27,12 @@ steps:
 - task: FtpUpload@2
   inputs:
     credentialsOption: 'inputs'
-    serverUrl: 'ftp://191.252.197.235'
-    username: 'ecommerce'
-    password: 'object#IIS#'
-    rootDirectory: 'TesteObject/'
+    serverUrl: 'ftp://191.252.197.235/TesteObject'
+    username: 'Ecommerce'
+    password: 'object#IIS@'
+    rootDirectory: 
     filePatterns: '**'
-    remoteDirectory: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+    remoteDirectory: '/'
     clean: false
     cleanContents: false
     preservePaths: false
